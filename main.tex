@@ -13,11 +13,13 @@
 \newcommand{\bStart}{\buttonStyle{start}}
 \newcommand{\bSelect}{\buttonStyle{select}}
 
-\newcommand{\test}{\buttonStyle{a}}
+\newcommand{\nb}[1]{\texttt{#1}\xspace}
+
+\newcommand{\lsdj}{\textit{LSDJ}\xspace}
 
 
 %opening
-\title{LSDJ Tutorial}
+\title{\lsdj Tutorial}
 \author{Sabrepulse}
 \date{Original text: 2009? \\ Edit (Erwan): \today}
 
@@ -27,7 +29,7 @@
 \maketitle
 
 \begin{abstract}
-This is a tutorial for people who want to learn how to make music using LSDJ and have either very basic or no musical knowledge. I hope this basic guide helps people, as throughout learning the program I trawled the intarnetz for different explanations and tutorials – another one can’t be a bad thing!
+This is a tutorial for people who want to learn how to make music using \lsdj and have either very basic or no musical knowledge. I hope this basic guide helps people, as throughout learning the program I trawled the intarnetz for different explanations and tutorials – another one can’t be a bad thing!
 \end{abstract}
 
 
@@ -37,9 +39,9 @@ This is a tutorial for people who want to learn how to make music using LSDJ and
 
 
 
-I have previous digital musical knowledge of programs such as Ableton Live, Cubase and FL Studio and I also have a working understanding of chords, scales and musical notation. It's not essential that you know any of these things or have previous experience in music (everyone has to start somewhere right?) but it has certainly helped me. My advice would be to give LSDJ a try, and if you find it too difficult try learning the basics on computer software with an easier graphical interface.
+I have previous digital musical knowledge of programs such as Ableton Live, Cubase and FL Studio and I also have a working understanding of chords, scales and musical notation. It's not essential that you know any of these things or have previous experience in music (everyone has to start somewhere right?) but it has certainly helped me. My advice would be to give \lsdj a try, and if you find it too difficult try learning the basics on computer software with an easier graphical interface.
 
-This isn't a guide to every nook and cranny the LSDJ has to offer. The manual and wiki on the official website harbor a mass of information that I couldn't possibly hope to include in a 'newbie' guide.
+This isn't a guide to every nook and cranny the \lsdj has to offer. The manual and wiki on the official website harbor a mass of information that I couldn't possibly hope to include in a 'newbie' guide.
 
 Instead what I'm going to do is run you through how to create a small song---the information and knowledge you take from that should hopefully set you on your way to creating bigger and better things!
 
@@ -47,7 +49,7 @@ Instead what I'm going to do is run you through how to create a small song---the
 
 
 
-\paragraph{Basic structure of LSDJ}
+\paragraph{Basic structure of \lsdj}
 
 The first screen you will see after the Nintendo logo passes will be the \textit{Song} screen.
 %
@@ -63,7 +65,7 @@ In the song screen you place numbered blocks called \textit{Chains}, inside thes
 
 \item Highlight the tempo\footnote{The tempo is the speed at which your entire song is played. It is measured in Beats Per Minutes, or BPM} field with the control pad, hold \bA and press \bUp, \bDown, \bLeft or \bRight to experiment with changing the tempo of the song.
 
-\item Let's change the tempo to 140~BPM. \textbf{I'm showing you this first to give you a taster of how most parameters/fields in lsdj are altered, by holding \bA and using the control pad.}
+\item Let's change the tempo to 140~BPM. \textbf{I'm showing you this first to give you a taster of how most parameters/fields in \lsdj are altered, by holding \bA and using the control pad.}
 
 \item Once you've changed the tempo, hold \bSelect and push \bDown to return to the Song Screen.
 \end{enumerate}
@@ -74,13 +76,13 @@ First we’ll start with a simple bassline.
 
 \begin{enumerate}
 
-\item In Channel PU1, highlight the first top left cell by using the control pad, then double tap A (this creates a new Chain).
+\item In Channel \nb{PU1}, highlight the first top left cell by using the control pad, then double tap \bA (this creates a new Chain).
 
-\item You should now see chain 01 in the cell you selected. Now you want to go to the chain screen (hold select + press right)
+\item You should now see chain \nb{01} in the cell you selected. Now you want to go to the chain screen (hold \bSelect + press \bRight)
 
-\item In the chain screen we want to create a phrase. Do this by double tapping A on the first cells at the top. For the sake of this tutorial I will assume you have created the phrase 01.
+\item In the chain screen we want to create a phrase. Do this by double tapping \bA on the first cells at the top. For the sake of this tutorial I will assume you have created the phrase \nb{01}.
 
-\item Now we need to make the bassline. Still in the chain screen, highlight phrase 01 and hold select + press right, this will take you to the phrase screen for phrase 01. Enter the following notes:
+\item Now we need to make the \textit{bassline}. Still in the chain screen, highlight phrase \nb{01} and hold \bSelect + press \bRight, this will take you to the phrase screen for phrase \nb{01}. Enter the following notes:
 \begin{verbatim}
 0.
 1.
@@ -114,7 +116,7 @@ F.
 
 \item To clone, highlight the second phrase 01, hold select, then press b, then press a. The phrase number will change to one you’ve previously not used. Do this for the remaining two below.
 
-\item Now in chain 01 you should see 4 different phrase numbers. If you look in the phrase screens for each you will see that they’re exactly the same as each other. They all have the notes you placed inside for the first one. But because they now have different phrase numbers, you are able to edit each one independently of each other. Changing each phrase will not change another. This technique is the backbone of working quickly and efficiently with LSDJ, so it’s handy to learn this straight away.
+\item Now in chain 01 you should see 4 different phrase numbers. If you look in the phrase screens for each you will see that they’re exactly the same as each other. They all have the notes you placed inside for the first one. But because they now have different phrase numbers, you are able to edit each one independently of each other. Changing each phrase will not change another. This technique is the backbone of working quickly and efficiently with \lsdj, so it’s handy to learn this straight away.
 
 \item Ok the next step is to edit the notes in each new phrase to round off our bassline.
 
@@ -202,7 +204,7 @@ Go inside the instrument screen for instrument 01, name it LEAD1 and edit the pa
 
 After you’ve done this head back to the phrase screen for this melody. The next thing we’re going to change is the command column on the far right.
 
-This is where you start making your melodies really interesting and giving them a bit of depth. Like anything in lsdj, it’s really worth going though the manual thoroughly and doing your homework on what each command can do.
+This is where you start making your melodies really interesting and giving them a bit of depth. Like anything in \lsdj, it’s really worth going though the manual thoroughly and doing your homework on what each command can do.
 
 For this example we’re going to add two different commands to our melody.
 
@@ -225,7 +227,7 @@ Navigate from the phrase screen back to the chain screen and enter your phrase i
 When you’re done head back to the song screen and press start. The song screen will now play both your chains (bass \& lead melody) together for the first time. The 4 phrases in your bassline and the 4 phrases in your lead melody will play alongside each other and then loop back to the first phrase in each. If something sounds out of tune, go into the phrase where you think the problem is and alter it until it sounds right to you.
 
 \section{Kick Drum}
-There are sampled drumkits available in the wave channel for you to use. In my opinion the kick drums on these kits are really weak and not very loud. The first big problem I was confronted with in lsdj was how to make a really loud kick drum that you hear in a great deal of contemporary chiptune.
+There are sampled drumkits available in the wave channel for you to use. In my opinion the kick drums on these kits are really weak and not very loud. The first big problem I was confronted with in \lsdj was how to make a really loud kick drum that you hear in a great deal of contemporary chiptune.
 
 The answer is to forget about the wave channel for sampled drums and create an analogue kick drum using a pulse channel.
 
@@ -245,7 +247,7 @@ The kick sounds a little unruly at the moment, what we need to do is tame how lo
 
 Ok so that’s your kick drum sorted on that phrase. All you need to do is make sure the kicks are present on each phrase that you’re using. Once you’ve done this head back to the song screen and press start to hear the kick drum, bassline and lead melody all in action.
 
-Please note that this isn’t the definitive method of creating a kick drum using the pulse channel. The technique here is a carbon copy of one posted on the LSDJ wiki here where there are other examples you can follow.
+Please note that this isn’t the definitive method of creating a kick drum using the pulse channel. The technique here is a carbon copy of one posted on the \lsdj wiki here where there are other examples you can follow.
 
 \section{Percussion (Snare Drum + Hihats)}
 Create a new chain in the Noise channel (NOI). If you’ve been following up to now it should be chain 03. If not don’t worry. Just double tap A to create a virgin chain.
@@ -260,7 +262,7 @@ Go back to your phrase screen, create a new instrument, add these notes before a
 
 Try changing a few of the phrases in this chain and adding new percussion patterns. Once you’ve got it sounding how you want navigate back to the song screen and hit start to hear your kick drum, bassline, lead melody, snare and hi-hat all working in perfect harmony.
 
-By now, you should have enough basic knowledge and understanding to create chains, phrases and instruments in lsdj and use these to construct a simple song. Again, remember to read the lsdj manual and check the lsdj wiki/mailing list for advanced techniques and for anything at all you’re not sure of.
+By now, you should have enough basic knowledge and understanding to create chains, phrases and instruments in \lsdj and use these to construct a simple song. Again, remember to read the \lsdj manual and check the \lsdj wiki/mailing list for advanced techniques and for anything at all you’re not sure of.
 
 
 \section*{Source and changes}
@@ -269,7 +271,7 @@ Source: \url{https://www.douban.com/group/topic/8715664/}
 
 \begin{itemize}
 	\item Added some section titles
-	\item Changed some stuff to match last LSDJ version (4.8.9)
+	\item Changed some stuff to match last \lsdj version (4.8.9)
 \end{itemize}
 
 
