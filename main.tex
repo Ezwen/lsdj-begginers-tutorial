@@ -173,14 +173,19 @@ Ok so you can hear the bassline progressing, and at last you can hear something 
 
 \end{enumerate}
 
-Next we want to edit the envelope field. If you have very basic or no understanding of this, it's where you can control the ADSR (attack, decay, sustain, release). There are countless explanations of this on the net, read this link to do your homework.
+Next we want to edit the \textit{envelope} field. If you have very basic or no understanding of this, it's where you can control the ADSR (attack, decay, sustain, release). There are countless explanations of this on the net, read this link to do your homework.
 
 \begin{enumerate}[resume]
 
 \item By default the envelope is set to \nb{A9}. If you change the \nb{A} up to \nb{F} (hold \bSelect + \bUp) you will hear the instrument getting louder. If you change the \nb{9} down to \nb{1} (hold \bSelect + \bLeft) you will hear the instrument getting shorter. Playing about with these values you should try to make the instrument sound short and punchy. A good one to try is around \nb{D3}.
 
-\item  The next thing we need to edit is the wave duty cycle of the instrument. That's the little graphic image of the wave, directly underneath the envelope field. There are only 4 positions it can be changed to: Far left (12.5\%), Left (25\%), Middle (50\%) and Right (75\%). 
-Hold \bA on the field and push \bRight or \bLeft to switch between the 4 settings. If your bassline is playing in the background you will be able to hear the cycle being changed. The middle setting (50\%) has a good low bassy sound so choose that for now.
+\end{enumerate}
+
+The next thing we need to edit is the \textit{wave} duty cycle of the instrument. That's the little graphic image of the wave, directly underneath the envelope field. There are only 4 positions it can be changed to: Far left (12.5\%), Left (25\%), Middle (50\%) and Right (75\%). 
+
+\begin{enumerate}[resume]
+
+\item  Hold \bA on the field and push \bRight or \bLeft to switch between the 4 settings. If your bassline is playing in the background you will be able to hear the cycle being changed. The middle setting (50\%) has a good low bassy sound so choose that for now.
 
 \item Play around with the other fields in the instrument field if you like to hear what different things can affect your pulse instrument.
 
@@ -202,12 +207,17 @@ Let's just recap on what we've done so far:
 
 \section{Lead Melody}
 
-In Channel PU2, create a new chain by double tapping A.
+Now we will first create a simple melody, then we will customize it with some commands.
 
-Navigate to the chain screen and create a new phrase.
+\subsection{Creating the lead melody}
 
-Inside this phrase enter a note then immediately create a new instrument for it. As the instrument you used before was 00 (by default) and you don't want the lead melody instrument to sound like the bassline instrument – let's make this one instrument 01.
+\begin{enumerate}	
 
+\item In Channel \nb{PU2}, create a new chain by double tapping \bA.
+
+\item Navigate to the chain screen and create a new phrase.
+
+\item Inside this phrase enter a note then immediately create a new instrument for it. As the instrument you used before was \nb{00} (by default) and you don't want the lead melody instrument to sound like the bassline instrument---let's make this one instrument \nb{01}.
 
 \begin{figure}
 \begin{notes}
@@ -231,38 +241,41 @@ F.
 \caption{Initial lead melody.}\label{melody}%TODO
 \end{figure}
 
-We still need to enter notes for the lead melody so let's do something simple, as shown in Figure \ref{melody}.
+\item We still need to enter notes for the lead melody so let's do something simple, as shown in Figure \ref{melody}. Each of these notes should now have instrument \nb{01} in the column next to them.
+
+\item Go inside the instrument screen for instrument \nb{01}, name it \nb{LEAD1} and edit the parameters like before until you hear something you like. I'll choose envelope \nb{C2} and wave duty cycle left (25\%), but it's up to you!
+
+\end{enumerate}
 
 
-Something like that.
 
-Each of these notes should now have instrument 01 in the column next to them.
+\subsection{Customizing the melody with a few commands}
 
-Go inside the instrument screen for instrument 01, name it LEAD1 and edit the parameters like before until you hear something you like. I'll choose envelope C2 and wave duty cycle left (25%), but it's up to you!
+After you've done this head back to the phrase screen for this melody. The next thing we're going to change is the \textit{command} column on the far right. This is where you start making your melodies really interesting and giving them a bit of depth. Like anything in \lsdj, it's really worth going though the manual thoroughly and doing your homework on what each command can do. For this example we're going to add two different commands to our melody.
 
-After you've done this head back to the phrase screen for this melody. The next thing we're going to change is the command column on the far right.
+\begin{enumerate}
+	
+\item Go to row \nb{0} and highlight the first command box (you're able to highlight two). Push \bA and it'll give you the command \nb{A} straight away. We don't want this one, so hold \bA and keep pushing right until you get to command \nb{C}. This is the chord command.
 
-This is where you start making your melodies really interesting and giving them a bit of depth. Like anything in \lsdj, it's really worth going though the manual thoroughly and doing your homework on what each command can do.
+\item Now highlight the box to the right of it and push \bA, it will come up with \nb{00}. This is where you alter what each command does. \nb{00} won't do anything on this command, so let's try \nb{07} instead. Hit \bSelect + \bStart to hear the melody with this new command in place. You'll hear that the first note is now magically transformed into a chord! Try doing this to a couple more notes in your melody.
 
-For this example we're going to add two different commands to our melody.
+\end{enumerate}
 
-Go to row 0 and highlight the first command box (you're able to highlight two). Push A and it'll give you the command A straight away. We don't want this one, so hold A and keep pushing right until you get to command C. This is the chord command.
+The second command we're going to try is the \nb{O} command. This can cause the notes in your melody to be played through either the left or right speaker channel, which is called \textit{panning}. There are four states you can assign to the command: \nb{L} (left), \nb{R} (right), \nb{LR} (left \& right) or \nb{\_\_} (which essentially turns both channels off so you get no sound coming through on that command).
 
-Now highlight the box to the right of it and push A, it will come up with 00. This is where you alter what each command does. 00 won't do anything on this command, so let's try 07 instead. Hit select + start to hear the melody with this new command in place. You'll hear that the first note is now magically transformed into a chord! Try doing this to a couple more notes in your melody.
+\begin{enumerate}[resume]
+	
+\item  On rows 1, 5, 9 and D in your phrase, assign the O command to L On rows 3, 7, B and F in your phrase, assign the O command to R
 
-The second command we're going to try is the O command. This can cause the notes in your melody to be played through either the left or right speaker channel, which is called panning.
-
-There are four states you can assign to the command: L (left), R (right), LR (left \& right) or \_\_ (which essentially turns both channels off so you get no sound coming through on that command).
-
-On rows 1, 5, 9 and D in your phrase, assign the O command to L On rows 3, 7, B and F in your phrase, assign the O command to R
-
-Play your melody and you will hear that after each note, the channel is panned to either left or right. In this example we have panned the melody in the spaces between the notes – I tend to find this gives a better stereo effect than placing the pan on the rows where each note is. Also this gives you room to place commands (the chord command we used for instance) on the rows with the notes themselves.
+\item Play your melody and you will hear that after each note, the channel is panned to either left or right. In this example we have panned the melody in the spaces between the notes – I tend to find this gives a better stereo effect than placing the pan on the rows where each note is. Also this gives you room to place commands (the chord command we used for instance) on the rows with the notes themselves.
 
 That's it for the lead melody for now, try experimenting with different commands and their parameters to try and make it sound even more interesting!
 
 Navigate from the phrase screen back to the chain screen and enter your phrase in the top 4 rows. If you want to change your lead melody even more, remember the cloning feature and use this to create new phrases.
 
 When you're done head back to the song screen and press start. The song screen will now play both your chains (bass \& lead melody) together for the first time. The 4 phrases in your bassline and the 4 phrases in your lead melody will play alongside each other and then loop back to the first phrase in each. If something sounds out of tune, go into the phrase where you think the problem is and alter it until it sounds right to you.
+
+\end{enumerate}
 
 \section{Kick Drum}
 There are sampled drumkits available in the wave channel for you to use. In my opinion the kick drums on these kits are really weak and not very loud. The first big problem I was confronted with in \lsdj was how to make a really loud kick drum that you hear in a great deal of contemporary chiptune.
