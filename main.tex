@@ -282,29 +282,36 @@ That's it for the lead melody for now, try experimenting with different commands
 \end{enumerate}
 
 \section{Kick Drum}
-There are sampled drumkits available in the wave channel for you to use. In my opinion the kick drums on these kits are really weak and not very loud. The first big problem I was confronted with in \lsdj was how to make a really loud kick drum that you hear in a great deal of contemporary chiptune.
 
+There are sampled drumkits available in the wave channel for you to use. In my opinion the kick drums on these kits are really weak and not very loud. The first big problem I was confronted with in \lsdj was how to make a really loud kick drum that you hear in a great deal of contemporary chiptune.
+%
 The answer is to forget about the wave channel for sampled drums and create an analogue kick drum using a pulse channel.
 
-Right now you're probably screaming “But how!? I'm already using both of those channels for my bassline \& lead melody! or “How the hell do I create a drum from a pulse instrument?!" . It's really easy.
+Right now you're probably screaming \textit{"But how!? I'm already using both of those channels for my bassline \& lead melody!"} or \textit{"How the hell do I create a drum from a pulse instrument?!"}. It's really easy.
 
-In your PU1 channel, your bassline notes in each of the 4 phrases are only assigned to rows 2, 6, A and E. What we're going to do is create a pulse channel instrument that sounds like a kick drum, and we're going to place it in rows 0, 4, 8 and C. Simply put it'll sound like this: Kick, Bass, Kick, Bass, Kick, Bass, Kick, Bass.
+\begin{enumerate}
 
-First, go inside the first phrase in your bassline chain. Create a new instrument and place it on rows 0, 4, 8 and C, making sure that the note you place is always C5.
+\item  In your \nb{PU1} channel, your bassline notes in each of the 4 phrases are only assigned to rows \nb{2}, \nb{6}, \nb{A} and \nb{E}. What we're going to do is create a pulse channel instrument that sounds like a kick drum, and we're going to place it in rows \nb{0}, \nb{4}, \nb{8} and \nb{C}. Simply put it'll sound like this: Kick, Bass, Kick, Bass, Kick, Bass, Kick, Bass.
 
-Go inside that instrument, make sure it is a pulse instrument and name it KICK. Set the envelope to F1. Set the wave duty cycle to middle (50%). Go to the bottom of the screen and set the Table to 00 (just hold A and press right).
+\item First, go inside the first phrase in your bassline chain. Create a new instrument and place it on rows \nb{0}, \nb{4}, \nb{8} and \nb{C}, making sure that the note you place is always \nb{C5}.
 
-Now navigate to the Table screen as you do with other screens by holding select and pressing right. As this is a simple tutorial I'm not going to go into any detail with regards to tables right now, but this technique should give you a tiny taster of what tables are able to do.
+\item Go inside that instrument, make sure it is a pulse instrument and name it \nb{KICK}. Set the envelope to \nb{F1}. Set the wave duty cycle to middle (50\%). Go to the bottom of the screen and set the Table to \nb{00} (just hold \bA and press \bRight).
 
-In the table screen you'll see a lot of columns, we're going to go to the top far right cell and use the command column to choose command PF1. This is the pitch command and what we are doing is pitching the pulse instrument right down to give it a punchy, kick drum sound. If you press start to preview what you've done you'll hear the kick coming right before each of your bass notes.
+\item Now navigate to the Table screen as you do with other screens by holding \bSelect and pressing \bRight. As this is a simple tutorial I'm not going to go into any detail with regards to tables right now, but this technique should give you a tiny taster of what tables are able to do.
 
-The kick sounds a little unruly at the moment, what we need to do is tame how long it plays for by using the K command to ‘Kill' the trail the kick seems to be leaving. Right at the bottom of the command column place command K00, you'll probably find it's best to put it at the second to last row on the column to avoid clicking. Press play again and you'll hear it's eradicated the noisy trail and you're left with a loud, punchy kick drum and bass combo!
+\item In the table screen you'll see a lot of columns, we're going to go to the top far right cell and use the command column to choose command \nb{PF1}. This is the \textit{pitch} command and what we are doing is pitching the pulse instrument right down to give it a punchy, kick drum sound. If you press start to preview what you've done you'll hear the kick coming right before each of your bass notes.
 
-Ok so that's your kick drum sorted on that phrase. All you need to do is make sure the kicks are present on each phrase that you're using. Once you've done this head back to the song screen and press start to hear the kick drum, bassline and lead melody all in action.
+\item The kick sounds a little unruly at the moment, what we need to do is tame how long it plays for by using the \nb{K} command to \textit{kill} the trail the kick seems to be leaving. Right at the bottom of the command column place command \nb{K00}, you'll probably find it's best to put it at the second to last row on the column to avoid clicking. Press play again and you'll hear it's eradicated the noisy trail and you're left with a loud, punchy kick drum and bass combo!
+
+\item Ok so that's your kick drum sorted on that phrase. All you need to do is make sure the kicks are present on each phrase that you're using. Once you've done this head back to the song screen and press \bStart to hear the kick drum, bassline and lead melody all in action.
+
+\end{enumerate}
 
 Please note that this isn't the definitive method of creating a kick drum using the pulse channel. The technique here is a carbon copy of one posted on the \lsdj wiki here where there are other examples you can follow.
 
+
 \section{Percussion (Snare Drum + Hihats)}
+
 Create a new chain in the Noise channel (NOI). If you've been following up to now it should be chain 03. If not don't worry. Just double tap A to create a virgin chain.
 
 Go into your new chain and create a new phrase, go into this phrase and place notes (the default is fine, don't worry about that now) on rows 4 and C. This is going to be your snare drum so make sure these notes are assigned to a new instrument number, then go into the instrument screen for it.
