@@ -13,10 +13,17 @@
 \newcommand{\bStart}{\buttonStyle{{START}}}
 \newcommand{\bSelect}{\buttonStyle{{SELECT}}}
 
-\newcommand{\bRight}{\buttonSymbolStyle{\Rightarrow}}
-\newcommand{\bLeft}{\buttonSymbolStyle{\Leftarrow}}
-\newcommand{\bUp}{\buttonSymbolStyle{\Uparrow}}
-\newcommand{\bDown}{\buttonSymbolStyle{\Downarrow}}
+%% To display directional input as arrows
+%\newcommand{\bRight}{\buttonSymbolStyle{\Rightarrow}}
+%\newcommand{\bLeft}{\buttonSymbolStyle{\Leftarrow}}
+%\newcommand{\bUp}{\buttonSymbolStyle{\Uparrow}}
+%\newcommand{\bDown}{\buttonSymbolStyle{\Downarrow}}
+
+%% To display directional input as words
+\newcommand{\bRight}{\buttonStyle{right}}
+\newcommand{\bLeft}{\buttonStyle{left}}
+\newcommand{\bUp}{\buttonStyle{up}}
+\newcommand{\bDown}{\buttonStyle{down}}
 
 \newcommand{\note}[1]{\textbf{#1}\xspace}
 \newcommand{\nb}[1]{\texttt{#1}\xspace}
@@ -74,7 +81,7 @@ In the song screen you place numbered blocks called \textit{Chains}, inside thes
 
 \item Highlight the tempo\footnote{The tempo is the speed at which your entire song is played. It is measured in Beats Per Minutes, or BPM} field with the control pad, hold \bA and press \bUp, \bDown, \bLeft or \bRight to experiment with changing the tempo of the song.
 
-\item Let's change the tempo to 140~BPM. \textbf{I'm showing you this first to give you a taster of how most parameters/fields in \lsdj are altered, by holding \bA and using the control pad.}
+\item Let's change the tempo to 140~BPM. I'm showing you this first to give you a taster of how most parameters/fields in \lsdj are altered, by holding \bA and using the control pad.
 
 \item Once you've changed the tempo, hold \bSelect and push \bDown to return to the Song Screen.
 \end{enumerate}
