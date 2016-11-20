@@ -18,15 +18,14 @@
 \newcommand{\bUp}{\buttonSymbolStyle{\Uparrow}}
 \newcommand{\bDown}{\buttonSymbolStyle{\Downarrow}}
 
-%\newenvironment{notes}{\begin{verbbox}} {\end{verbbox}}
-
+\newcommand{\note}[1]{\textbf{#1}\xspace}
 \newcommand{\nb}[1]{\texttt{#1}\xspace}
-
 \newcommand{\lsdj}{\textit{LSDJ}\xspace}
-
 \DefineVerbatimEnvironment%
 {notes}{Verbatim}
 {frame=lines}
+
+
 
 %opening
 \title{\lsdj Tutorial}
@@ -82,7 +81,11 @@ In the song screen you place numbered blocks called \textit{Chains}, inside thes
 
 \section{Bass}
 
-First we'll start with a simple bassline.
+First we'll start with a simple bassline, then we'll create a bass instrument.
+
+\subsection{Preparing a simple bass line}
+
+
 
 \begin{enumerate}
 
@@ -125,50 +128,72 @@ Ok, we need to go back and create 3 more phrases in chain \nb{01} (if you think 
 
 \end{enumerate}
 
-Now, instead of having to create 3 new phrases, then go into them and place the notes for each again, we're going to make it easier and faster for you. We're going take our existing bassline section (phrase \nb{01}) and \textit{clone} it 3 times, so that we're able to edit each one without it affecting the other. 
+Now, instead of having to create 3 new phrases and place the notes for each again, we're going to make it easier and faster for you. We're going to take our existing bassline section (phrase \nb{01}) and \textit{clone} it 3 times, so that we're able to edit each one without it affecting the other. 
 
 \begin{enumerate}[resume]
 
-\item In chain \nb{01}, place 3 more phrase \nb{01}'s below the one your already have there.
+\item In chain \nb{01}, place 3 more times the phrase \nb{01} below the one your already have there, for a total of 4.
 
 \item To \textit{clone}, highlight the second phrase \nb{01}, hold \bSelect, then press \bB, then press \bA. The phrase number will change to one you've previously not used. Do this for the remaining two below.
 
-\item Now in chain 01 you should see 4 different phrase numbers. If you look in the phrase screens for each you will see that they're exactly the same as each other. They all have the notes you placed inside for the first one. But because they now have different phrase numbers, you are able to edit each one independently of each other. Changing each phrase will not change another. This technique is the backbone of working quickly and efficiently with \lsdj, so it's handy to learn this straight away.
+\end{enumerate}
 
-\item Ok the next step is to edit the notes in each new phrase to round off our bassline.
+Now in chain \nb{01} you should see 4 different phrase numbers. If you look in the phrase screens for each you will see that they're exactly the same as each other. They all have the notes you placed inside for the first one. But because they now have different phrase numbers, you are able to edit each one independently of each other. Changing each phrase will not change another. This technique is the backbone of working quickly and efficiently with \lsdj, so it's handy to learn this straight away.
 
-\item The first one contains all C notes. Make the second one contain E notes, make the third contain A notes and the fourth to contain B notes. For the sake of this tutorial we'll keep it as simple as possible.
 
-\item Go back to the chain screen and press start. You will see each of your phrases playing in progression, with a small black arrow pointing to which phrase is currently playing. This will loop until you press start again.
+\begin{enumerate}[resume]
 
-\item Ok so you can hear the bassline progressing, and at last you can hear something remotely musical! What we'd really like to do now is give that bassline a little more, well, bass!
+\item 
+Ok the next step is to edit the notes in each new phrase to round off our bassline.
+The first one contains all \note{C} notes. Make the second one contain \note{E} notes, make the third contain \note{A} notes and the fourth to contain \note{B} notes. For the sake of this tutorial we'll keep it as simple as possible.
 
-\item Navigate to the phrase screen for your first phrase (should be phrase 01).
+\item Go back to the chain screen and press \bStart. You will see each of your phrases playing in progression, with a small black arrow pointing to which phrase is currently playing. This will loop until you press start again.
 
-\item Next to each note you will see an instrument number (default is 00). Highlight this number (any will do) and select the instrument screen using the same method as you did with previous screens (hold select + right).
+\end{enumerate}
 
-\item In the instrument channel, the first thing you should do (to avoid later confusion) is name your instrument. You just highlight the name box and it'll bring up an alphabet for you to choose from. As we're creating a bassline here, let's call it BASS.
 
-\item Press play to hear your phrase in the background (or If you wish, hold select and press start to hear your entire song in the background) while you're editing the sound of the instrument. This is handy as you can hear what you're changing in real-time.
+\subsection{Creating a bass instrument}
 
-\item Next we want to edit the envelope field. If you have very basic or no understanding of this, it's where you can control the ADSR (attack, decay, sustain, release). There are countless explanations of this on the net, read this link to do your homework.
+Ok so you can hear the bassline progressing, and at last you can hear something remotely musical! What we'd really like to do now is give that bassline a little more, well, bass!
 
-\item By default the envelope is set to A9. If you change the A up to F (hold select + up) you will hear the instrument getting louder. If you change the 9 down to 1 (hold select + left) you will hear the instrument getting shorter. Playing about with these values you should try to make the instrument sound short and punchy. A good one to try is around D3.
+\begin{enumerate}
+	
+\item Navigate to the phrase screen for your first phrase (should be phrase \nb{01}).
 
-\item The next thing we need to edit is the wave duty cycle of the instrument. That's the little graphic image of the wave, directly underneath the envelope field.
+\item Next to each note you will see an instrument number (default is \nb{00}). Highlight this number (any will do) and select the instrument screen using the same method as you did with previous screens (hold \bSelect + \bRight).
 
-\item There are only 4 positions it can be changed to: Far left (12.5\%), Left (25\%), Middle (50\%) and Right (75\%). Hold A on the field and push right or left to switch between the 4 settings. If your bassline is playing in the background you will be able to hear the cycle being changed. The middle setting (50\%) has a good low bassy sound so choose that for now.
+\item In the instrument channel, the first thing you should do (to avoid later confusion) is name your instrument. You just highlight the name box and it'll bring up an alphabet for you to choose from. As we're creating a bassline here, let's call it \nb{BASS}.
+
+\item Press \bStart to hear your phrase in the background (or if you wish, hold \bSelect and press \bStart to hear your entire song in the background) while you're editing the sound of the instrument. This is handy as you can hear what you're changing in real-time.
+
+\end{enumerate}
+
+Next we want to edit the envelope field. If you have very basic or no understanding of this, it's where you can control the ADSR (attack, decay, sustain, release). There are countless explanations of this on the net, read this link to do your homework.
+
+\begin{enumerate}[resume]
+
+\item By default the envelope is set to \nb{A9}. If you change the \nb{A} up to \nb{F} (hold \bSelect + \bUp) you will hear the instrument getting louder. If you change the \nb{9} down to \nb{1} (hold \bSelect + \bLeft) you will hear the instrument getting shorter. Playing about with these values you should try to make the instrument sound short and punchy. A good one to try is around \nb{D3}.
+
+\item  The next thing we need to edit is the wave duty cycle of the instrument. That's the little graphic image of the wave, directly underneath the envelope field. There are only 4 positions it can be changed to: Far left (12.5\%), Left (25\%), Middle (50\%) and Right (75\%). 
+Hold \bA on the field and push \bRight or \bLeft to switch between the 4 settings. If your bassline is playing in the background you will be able to hear the cycle being changed. The middle setting (50\%) has a good low bassy sound so choose that for now.
 
 \item Play around with the other fields in the instrument field if you like to hear what different things can affect your pulse instrument.
 
-\item Once you've done this the first bassline section of your track is complete. Navigate back to the song screen (hold select + keep tapping left until you arrive there).
-
-Let's just recap on what we've done so far:
-
-Now you have 1 Chain (in your song screen) Which contains 4 different Phrases (in your chain screen) Each of which contain musical notes which determine the bassline (in your phrase screens) You have edited 1 Instrument which is assigned to each of the notes in your phrase.
+\item Once you've done this the first bassline section of your track is complete. Navigate back to the song screen (hold \bSelect + keep tapping \bLeft until you arrive there).
 
 
 \end{enumerate}
+
+Let's just recap on what we've done so far: 
+\begin{itemize}
+	\item Now you have 1 Chain (in your song screen)
+	\item  Which contains 4 different Phrases (in your chain screen) 
+	\item Each of which contain musical notes which determine the bassline (in your phrase screens)
+	\item  You have edited 1 Instrument which is assigned to each of the notes in your phrase.
+	
+\end{itemize}
+
+
 
 \section{Lead Melody}
 
