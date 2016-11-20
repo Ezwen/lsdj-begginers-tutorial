@@ -2,21 +2,31 @@
 
 \usepackage{url}
 \usepackage{xspace}
+\usepackage{bm}
+\usepackage{fancyvrb}
+\usepackage{enumitem}
 
 \newcommand{\buttonStyle}[1]{\textsf{#1}\xspace}
+\newcommand{\buttonSymbolStyle}[1]{$\bm{#1}$\xspace}
 \newcommand{\bA}{\buttonStyle{A}}
 \newcommand{\bB}{\buttonStyle{B}}
-\newcommand{\bRight}{\buttonStyle{right}}
-\newcommand{\bLeft}{\buttonStyle{left}}
-\newcommand{\bUp}{\buttonStyle{up}}
-\newcommand{\bDown}{\buttonStyle{down}}
-\newcommand{\bStart}{\buttonStyle{start}}
-\newcommand{\bSelect}{\buttonStyle{select}}
+\newcommand{\bStart}{\buttonStyle{{START}}}
+\newcommand{\bSelect}{\buttonStyle{{SELECT}}}
+
+\newcommand{\bRight}{\buttonSymbolStyle{\Rightarrow}}
+\newcommand{\bLeft}{\buttonSymbolStyle{\Leftarrow}}
+\newcommand{\bUp}{\buttonSymbolStyle{\Uparrow}}
+\newcommand{\bDown}{\buttonSymbolStyle{\Downarrow}}
+
+%\newenvironment{notes}{\begin{verbbox}} {\end{verbbox}}
 
 \newcommand{\nb}[1]{\texttt{#1}\xspace}
 
 \newcommand{\lsdj}{\textit{LSDJ}\xspace}
 
+\DefineVerbatimEnvironment%
+{notes}{Verbatim}
+{frame=lines}
 
 %opening
 \title{\lsdj Tutorial}
@@ -29,7 +39,7 @@
 \maketitle
 
 \begin{abstract}
-This is a tutorial for people who want to learn how to make music using \lsdj and have either very basic or no musical knowledge. I hope this basic guide helps people, as throughout learning the program I trawled the intarnetz for different explanations and tutorials – another one can’t be a bad thing!
+This is a tutorial for people who want to learn how to make music using \lsdj and have either very basic or no musical knowledge. I hope this basic guide helps people, as throughout learning the program I trawled the intarnetz for different explanations and tutorials – another one can't be a bad thing!
 \end{abstract}
 
 
@@ -72,7 +82,7 @@ In the song screen you place numbered blocks called \textit{Chains}, inside thes
 
 \section{Bass}
 
-First we’ll start with a simple bassline.
+First we'll start with a simple bassline.
 
 \begin{enumerate}
 
@@ -83,7 +93,7 @@ First we’ll start with a simple bassline.
 \item In the chain screen we want to create a phrase. Do this by double tapping \bA on the first cells at the top. For the sake of this tutorial I will assume you have created the phrase \nb{01}.
 
 \item Now we need to make the \textit{bassline}. Still in the chain screen, highlight phrase \nb{01} and hold \bSelect + press \bRight, this will take you to the phrase screen for phrase \nb{01}. Enter the following notes:
-\begin{verbatim}
+\begin{notes}
 0.
 1.
 2. C3
@@ -100,53 +110,60 @@ C.
 D.
 E. C3
 F.
-\end{verbatim}
+\end{notes}
 
-\item If you press play (start) you will hear the Game Boy burst into life. It’s not much (and certainly not a bassline) but it’s a start.
+\item If you press play (\bStart) you will hear the Game Boy burst into life. It's not much (and certainly not a bassline) but it's a start.
 
-\item Ok, we need to go back and create 3 more phrases in chain 01 (if you think about it, most dance/pop music travels in the 4/4 timing. That’s what we’re aiming for here to get you familiar with the program) %TODO
+\end{enumerate}
 
-\item To go back to the chain screen press and hold select and tap left. You should be back in chain 01, and phrase 01 will be visible.
+Ok, we need to go back and create 3 more phrases in chain \nb{01} (if you think about it, most dance/pop music travels in the 4/4 timing. That's what we're aiming for here to get you familiar with the program) %TODO
 
-\item Now, instead of having to create 3 new phrases, go into them and place the notes for each again – we’re going to make it easier and faster for you;
+\begin{enumerate}[resume]
 
-\item We’re going take our existing bassline section (phrase 01) and ‘clone’ it 3 times, so that we’re able to edit each one without it affecting the other. %TODO
 
-\item In chain 01, place 3 more phrase 01’s below the one your already have there.
+\item To go back to the chain screen press and hold \bSelect and tap \bLeft. You should be back in chain \nb{01}, and phrase \nb{01} will be visible.
 
-\item To clone, highlight the second phrase 01, hold select, then press b, then press a. The phrase number will change to one you’ve previously not used. Do this for the remaining two below.
+\end{enumerate}
 
-\item Now in chain 01 you should see 4 different phrase numbers. If you look in the phrase screens for each you will see that they’re exactly the same as each other. They all have the notes you placed inside for the first one. But because they now have different phrase numbers, you are able to edit each one independently of each other. Changing each phrase will not change another. This technique is the backbone of working quickly and efficiently with \lsdj, so it’s handy to learn this straight away.
+Now, instead of having to create 3 new phrases, then go into them and place the notes for each again, we're going to make it easier and faster for you. We're going take our existing bassline section (phrase \nb{01}) and \textit{clone} it 3 times, so that we're able to edit each one without it affecting the other. 
+
+\begin{enumerate}[resume]
+
+\item In chain \nb{01}, place 3 more phrase \nb{01}'s below the one your already have there.
+
+\item To \textit{clone}, highlight the second phrase \nb{01}, hold \bSelect, then press \bB, then press \bA. The phrase number will change to one you've previously not used. Do this for the remaining two below.
+
+\item Now in chain 01 you should see 4 different phrase numbers. If you look in the phrase screens for each you will see that they're exactly the same as each other. They all have the notes you placed inside for the first one. But because they now have different phrase numbers, you are able to edit each one independently of each other. Changing each phrase will not change another. This technique is the backbone of working quickly and efficiently with \lsdj, so it's handy to learn this straight away.
 
 \item Ok the next step is to edit the notes in each new phrase to round off our bassline.
 
-\item The first one contains all C notes. Make the second one contain E notes, make the third contain A notes and the fourth to contain B notes. For the sake of this tutorial we’ll keep it as simple as possible.
+\item The first one contains all C notes. Make the second one contain E notes, make the third contain A notes and the fourth to contain B notes. For the sake of this tutorial we'll keep it as simple as possible.
 
 \item Go back to the chain screen and press start. You will see each of your phrases playing in progression, with a small black arrow pointing to which phrase is currently playing. This will loop until you press start again.
 
-\item Ok so you can hear the bassline progressing, and at last you can hear something remotely musical! What we’d really like to do now is give that bassline a little more, well, bass!
+\item Ok so you can hear the bassline progressing, and at last you can hear something remotely musical! What we'd really like to do now is give that bassline a little more, well, bass!
 
 \item Navigate to the phrase screen for your first phrase (should be phrase 01).
 
 \item Next to each note you will see an instrument number (default is 00). Highlight this number (any will do) and select the instrument screen using the same method as you did with previous screens (hold select + right).
 
-\item In the instrument channel, the first thing you should do (to avoid later confusion) is name your instrument. You just highlight the name box and it’ll bring up an alphabet for you to choose from. As we’re creating a bassline here, let’s call it BASS.
+\item In the instrument channel, the first thing you should do (to avoid later confusion) is name your instrument. You just highlight the name box and it'll bring up an alphabet for you to choose from. As we're creating a bassline here, let's call it BASS.
 
-\item Press play to hear your phrase in the background (or If you wish, hold select and press start to hear your entire song in the background) while you’re editing the sound of the instrument. This is handy as you can hear what you’re changing in real-time.
+\item Press play to hear your phrase in the background (or If you wish, hold select and press start to hear your entire song in the background) while you're editing the sound of the instrument. This is handy as you can hear what you're changing in real-time.
 
-\item Next we want to edit the envelope field. If you have very basic or no understanding of this, it’s where you can control the ADSR (attack, decay, sustain, release). There are countless explanations of this on the net, read this link to do your homework.
+\item Next we want to edit the envelope field. If you have very basic or no understanding of this, it's where you can control the ADSR (attack, decay, sustain, release). There are countless explanations of this on the net, read this link to do your homework.
 
 \item By default the envelope is set to A9. If you change the A up to F (hold select + up) you will hear the instrument getting louder. If you change the 9 down to 1 (hold select + left) you will hear the instrument getting shorter. Playing about with these values you should try to make the instrument sound short and punchy. A good one to try is around D3.
 
-\item The next thing we need to edit is the wave duty cycle of the instrument. That’s the little graphic image of the wave, directly underneath the envelope field.
+\item The next thing we need to edit is the wave duty cycle of the instrument. That's the little graphic image of the wave, directly underneath the envelope field.
 
 \item There are only 4 positions it can be changed to: Far left (12.5\%), Left (25\%), Middle (50\%) and Right (75\%). Hold A on the field and push right or left to switch between the 4 settings. If your bassline is playing in the background you will be able to hear the cycle being changed. The middle setting (50\%) has a good low bassy sound so choose that for now.
 
 \item Play around with the other fields in the instrument field if you like to hear what different things can affect your pulse instrument.
 
-\item Once you’ve done this the first bassline section of your track is complete. Navigate back to the song screen (hold select + keep tapping left until you arrive there).
+\item Once you've done this the first bassline section of your track is complete. Navigate back to the song screen (hold select + keep tapping left until you arrive there).
 
-Let’s just recap on what we’ve done so far:
+Let's just recap on what we've done so far:
 
 Now you have 1 Chain (in your song screen) Which contains 4 different Phrases (in your chain screen) Each of which contain musical notes which determine the bassline (in your phrase screens) You have edited 1 Instrument which is assigned to each of the notes in your phrase.
 
@@ -159,9 +176,9 @@ In Channel PU2, create a new chain by double tapping A.
 
 Navigate to the chain screen and create a new phrase.
 
-Inside this phrase enter a note then immediately create a new instrument for it. As the instrument you used before was 00 (by default) and you don’t want the lead melody instrument to sound like the bassline instrument – let’s make this one instrument 01.
+Inside this phrase enter a note then immediately create a new instrument for it. As the instrument you used before was 00 (by default) and you don't want the lead melody instrument to sound like the bassline instrument – let's make this one instrument 01.
 
-We still need to enter notes for the lead melody so let’s do something simple:
+We still need to enter notes for the lead melody so let's do something simple:
 
 0 – C6
 
@@ -200,19 +217,19 @@ Something like that.
 
 Each of these notes should now have instrument 01 in the column next to them.
 
-Go inside the instrument screen for instrument 01, name it LEAD1 and edit the parameters like before until you hear something you like. I’ll choose envelope C2 and wave duty cycle left (25%), but it’s up to you!
+Go inside the instrument screen for instrument 01, name it LEAD1 and edit the parameters like before until you hear something you like. I'll choose envelope C2 and wave duty cycle left (25%), but it's up to you!
 
-After you’ve done this head back to the phrase screen for this melody. The next thing we’re going to change is the command column on the far right.
+After you've done this head back to the phrase screen for this melody. The next thing we're going to change is the command column on the far right.
 
-This is where you start making your melodies really interesting and giving them a bit of depth. Like anything in \lsdj, it’s really worth going though the manual thoroughly and doing your homework on what each command can do.
+This is where you start making your melodies really interesting and giving them a bit of depth. Like anything in \lsdj, it's really worth going though the manual thoroughly and doing your homework on what each command can do.
 
-For this example we’re going to add two different commands to our melody.
+For this example we're going to add two different commands to our melody.
 
-Go to row 0 and highlight the first command box (you’re able to highlight two). Push A and it’ll give you the command A straight away. We don’t want this one, so hold A and keep pushing right until you get to command C. This is the chord command.
+Go to row 0 and highlight the first command box (you're able to highlight two). Push A and it'll give you the command A straight away. We don't want this one, so hold A and keep pushing right until you get to command C. This is the chord command.
 
-Now highlight the box to the right of it and push A, it will come up with 00. This is where you alter what each command does. 00 won’t do anything on this command, so let’s try 07 instead. Hit select + start to hear the melody with this new command in place. You’ll hear that the first note is now magically transformed into a chord! Try doing this to a couple more notes in your melody.
+Now highlight the box to the right of it and push A, it will come up with 00. This is where you alter what each command does. 00 won't do anything on this command, so let's try 07 instead. Hit select + start to hear the melody with this new command in place. You'll hear that the first note is now magically transformed into a chord! Try doing this to a couple more notes in your melody.
 
-The second command we’re going to try is the O command. This can cause the notes in your melody to be played through either the left or right speaker channel, which is called panning.
+The second command we're going to try is the O command. This can cause the notes in your melody to be played through either the left or right speaker channel, which is called panning.
 
 There are four states you can assign to the command: L (left), R (right), LR (left \& right) or \_\_ (which essentially turns both channels off so you get no sound coming through on that command).
 
@@ -220,49 +237,49 @@ On rows 1, 5, 9 and D in your phrase, assign the O command to L On rows 3, 7, B 
 
 Play your melody and you will hear that after each note, the channel is panned to either left or right. In this example we have panned the melody in the spaces between the notes – I tend to find this gives a better stereo effect than placing the pan on the rows where each note is. Also this gives you room to place commands (the chord command we used for instance) on the rows with the notes themselves.
 
-That’s it for the lead melody for now, try experimenting with different commands and their parameters to try and make it sound even more interesting!
+That's it for the lead melody for now, try experimenting with different commands and their parameters to try and make it sound even more interesting!
 
 Navigate from the phrase screen back to the chain screen and enter your phrase in the top 4 rows. If you want to change your lead melody even more, remember the cloning feature and use this to create new phrases.
 
-When you’re done head back to the song screen and press start. The song screen will now play both your chains (bass \& lead melody) together for the first time. The 4 phrases in your bassline and the 4 phrases in your lead melody will play alongside each other and then loop back to the first phrase in each. If something sounds out of tune, go into the phrase where you think the problem is and alter it until it sounds right to you.
+When you're done head back to the song screen and press start. The song screen will now play both your chains (bass \& lead melody) together for the first time. The 4 phrases in your bassline and the 4 phrases in your lead melody will play alongside each other and then loop back to the first phrase in each. If something sounds out of tune, go into the phrase where you think the problem is and alter it until it sounds right to you.
 
 \section{Kick Drum}
 There are sampled drumkits available in the wave channel for you to use. In my opinion the kick drums on these kits are really weak and not very loud. The first big problem I was confronted with in \lsdj was how to make a really loud kick drum that you hear in a great deal of contemporary chiptune.
 
 The answer is to forget about the wave channel for sampled drums and create an analogue kick drum using a pulse channel.
 
-Right now you’re probably screaming “But how!? I’m already using both of those channels for my bassline \& lead melody! or “How the hell do I create a drum from a pulse instrument?!" . It’s really easy.
+Right now you're probably screaming “But how!? I'm already using both of those channels for my bassline \& lead melody! or “How the hell do I create a drum from a pulse instrument?!" . It's really easy.
 
-In your PU1 channel, your bassline notes in each of the 4 phrases are only assigned to rows 2, 6, A and E. What we’re going to do is create a pulse channel instrument that sounds like a kick drum, and we’re going to place it in rows 0, 4, 8 and C. Simply put it’ll sound like this: Kick, Bass, Kick, Bass, Kick, Bass, Kick, Bass.
+In your PU1 channel, your bassline notes in each of the 4 phrases are only assigned to rows 2, 6, A and E. What we're going to do is create a pulse channel instrument that sounds like a kick drum, and we're going to place it in rows 0, 4, 8 and C. Simply put it'll sound like this: Kick, Bass, Kick, Bass, Kick, Bass, Kick, Bass.
 
 First, go inside the first phrase in your bassline chain. Create a new instrument and place it on rows 0, 4, 8 and C, making sure that the note you place is always C5.
 
 Go inside that instrument, make sure it is a pulse instrument and name it KICK. Set the envelope to F1. Set the wave duty cycle to middle (50%). Go to the bottom of the screen and set the Table to 00 (just hold A and press right).
 
-Now navigate to the Table screen as you do with other screens by holding select and pressing right. As this is a simple tutorial I’m not going to go into any detail with regards to tables right now, but this technique should give you a tiny taster of what tables are able to do.
+Now navigate to the Table screen as you do with other screens by holding select and pressing right. As this is a simple tutorial I'm not going to go into any detail with regards to tables right now, but this technique should give you a tiny taster of what tables are able to do.
 
-In the table screen you’ll see a lot of columns, we’re going to go to the top far right cell and use the command column to choose command PF1. This is the pitch command and what we are doing is pitching the pulse instrument right down to give it a punchy, kick drum sound. If you press start to preview what you’ve done you’ll hear the kick coming right before each of your bass notes.
+In the table screen you'll see a lot of columns, we're going to go to the top far right cell and use the command column to choose command PF1. This is the pitch command and what we are doing is pitching the pulse instrument right down to give it a punchy, kick drum sound. If you press start to preview what you've done you'll hear the kick coming right before each of your bass notes.
 
-The kick sounds a little unruly at the moment, what we need to do is tame how long it plays for by using the K command to ‘Kill’ the trail the kick seems to be leaving. Right at the bottom of the command column place command K00, you’ll probably find it’s best to put it at the second to last row on the column to avoid clicking. Press play again and you’ll hear it’s eradicated the noisy trail and you’re left with a loud, punchy kick drum and bass combo!
+The kick sounds a little unruly at the moment, what we need to do is tame how long it plays for by using the K command to ‘Kill' the trail the kick seems to be leaving. Right at the bottom of the command column place command K00, you'll probably find it's best to put it at the second to last row on the column to avoid clicking. Press play again and you'll hear it's eradicated the noisy trail and you're left with a loud, punchy kick drum and bass combo!
 
-Ok so that’s your kick drum sorted on that phrase. All you need to do is make sure the kicks are present on each phrase that you’re using. Once you’ve done this head back to the song screen and press start to hear the kick drum, bassline and lead melody all in action.
+Ok so that's your kick drum sorted on that phrase. All you need to do is make sure the kicks are present on each phrase that you're using. Once you've done this head back to the song screen and press start to hear the kick drum, bassline and lead melody all in action.
 
-Please note that this isn’t the definitive method of creating a kick drum using the pulse channel. The technique here is a carbon copy of one posted on the \lsdj wiki here where there are other examples you can follow.
+Please note that this isn't the definitive method of creating a kick drum using the pulse channel. The technique here is a carbon copy of one posted on the \lsdj wiki here where there are other examples you can follow.
 
 \section{Percussion (Snare Drum + Hihats)}
-Create a new chain in the Noise channel (NOI). If you’ve been following up to now it should be chain 03. If not don’t worry. Just double tap A to create a virgin chain.
+Create a new chain in the Noise channel (NOI). If you've been following up to now it should be chain 03. If not don't worry. Just double tap A to create a virgin chain.
 
-Go into your new chain and create a new phrase, go into this phrase and place notes (the default is fine, don’t worry about that now) on rows 4 and C. This is going to be your snare drum so make sure these notes are assigned to a new instrument number, then go into the instrument screen for it.
+Go into your new chain and create a new phrase, go into this phrase and place notes (the default is fine, don't worry about that now) on rows 4 and C. This is going to be your snare drum so make sure these notes are assigned to a new instrument number, then go into the instrument screen for it.
 
 In the instrument screen, we need to make sure that we are using a Noise instrument, so make sure that is selected instead of Pulse, Wave or Kit.
 
-Once you’ve done this name the instrument SNARE. Press play to hear what you’re altering whilst you edit the envelope to around C3, change the length to something that sounds snappy, and finally edit the sweep until the notes playing start to resemble a snare sound. EF usually works fine so try that.
+Once you've done this name the instrument SNARE. Press play to hear what you're altering whilst you edit the envelope to around C3, change the length to something that sounds snappy, and finally edit the sweep until the notes playing start to resemble a snare sound. EF usually works fine so try that.
 
-Go back to your phrase screen, create a new instrument, add these notes before and after each of the snares and experiment inside the instrument screen remember to name this instrument HAT, and then make these as long or short as you want. A1 or A2 is usually a good envelope setting, and to be honest you won’t really need to alter the length or sweep parameters but again, it’s up to you, experimentation is the key!
+Go back to your phrase screen, create a new instrument, add these notes before and after each of the snares and experiment inside the instrument screen remember to name this instrument HAT, and then make these as long or short as you want. A1 or A2 is usually a good envelope setting, and to be honest you won't really need to alter the length or sweep parameters but again, it's up to you, experimentation is the key!
 
-Try changing a few of the phrases in this chain and adding new percussion patterns. Once you’ve got it sounding how you want navigate back to the song screen and hit start to hear your kick drum, bassline, lead melody, snare and hi-hat all working in perfect harmony.
+Try changing a few of the phrases in this chain and adding new percussion patterns. Once you've got it sounding how you want navigate back to the song screen and hit start to hear your kick drum, bassline, lead melody, snare and hi-hat all working in perfect harmony.
 
-By now, you should have enough basic knowledge and understanding to create chains, phrases and instruments in \lsdj and use these to construct a simple song. Again, remember to read the \lsdj manual and check the \lsdj wiki/mailing list for advanced techniques and for anything at all you’re not sure of.
+By now, you should have enough basic knowledge and understanding to create chains, phrases and instruments in \lsdj and use these to construct a simple song. Again, remember to read the \lsdj manual and check the \lsdj wiki/mailing list for advanced techniques and for anything at all you're not sure of.
 
 
 \section*{Source and changes}
