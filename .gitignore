@@ -2,6 +2,6 @@
 *.fdb_latexmk
 *.fls
 *.log
-main.pdf
 *.synctex.gz
 *.toc
+lsdj-tutorial.pdf
